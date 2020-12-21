@@ -1,0 +1,13 @@
+
+/* notes
+1. index.html file is the starting point. it calls the main.ts file.
+2. main.ts file "bootstraps" (starts) the appmodule. appmodule is generally the module that encloses all the components.
+in the AppModule also we mention what will be the component that needs to be bootstraped using 'bootstrap'
+3. AppModule is the main module where we register the components or other modules that we have dependency on.
+eg formsModule or RoutingModule etc
+The modules are the way in angular to share packagable functionalities (module is like plugins in vue)
+So, all additional functionalities can be added to the app using modules and registering them in "imports"
+4. All components/ modules/ directives are nothing but classes. Typescript decorators like @NgModule, @Component etc add meaning to that calss.
+and defines what will it be used as. ALl dependencies are declared in the AppModule.
+5. To the decorators we pass an object containing different properties like selector, imports, providers, declarations. ALl the properties are arrays.
+*/

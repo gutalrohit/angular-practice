@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ServerComponent } from './components/server/server.component';
+import { ClusterComponent } from './components/cluster/cluster.component';
+import { PipelineComponent } from './components/pipeline/pipeline.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ServerComponent,
+    ClusterComponent,
+    PipelineComponent
   ],
   imports: [
     BrowserModule,

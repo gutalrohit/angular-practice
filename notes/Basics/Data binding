@@ -1,0 +1,5 @@
+Data binding is the way to make the angular app interactive (Non static)
+Types : 
+1. String interpolation and property binding : Ts -> template data display
+2. Event binding : template to TS - reacting to user events
+3. Two way data binding. Ts <-> template

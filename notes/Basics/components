@@ -1,0 +1,8 @@
+/*
+The components are defined in app folder
+they are defined as name-component and then ts for ts file, name-component.html for template and a scss file.
+1. @Component ts decorator is used to define component. Imported from @angular/core
+2. The properties defined in the object to the component are:
+selector, templateUrl, styleUrl
+
+*/
