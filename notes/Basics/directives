@@ -1,0 +1,3 @@
+Directives are special instructins in the dom. 
+Main function is to control, manipulate the DOM
+Difference between coponwnt nd directivs is that Directives do not have templates. 

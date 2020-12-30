@@ -1,5 +1,20 @@
-<div> Server {{serverNumber}} Running from template </div>
+<div>Server {{ serverNumber }} Running from template</div>
 <p [innerText]="anotherServer"></p>
-Enter your name: <input type="text" [(ngModel)]="enteredName">
-Welcome to Mordor: {{enteredName}}
+Enter your name: <input type="text" [(ngModel)]="enteredName" /> Welcome to
+Mordor: {{ enteredName }}
 <button class="btn btn-primary" (click)="clickHandler()">Click Me</button>
+
+<p *ngIf="!showngif">Show ngIf</p>
+<!-- ngif is a structural directive, hnce * is added to denote that -->
+<p *ngIf="showngif; else showElse">Show ngIf</p>
+<ng-template #showElse>
+  <p [ngStyle]="{ color: fontColor }">Show else for ngif</p>
+</ng-template>
+<p [ngClass]="{ 'font-green': serverNumber === '2' }">
+  Using ngClass directive
+</p>
+
+<div *ngFor="let server of showServers">
+  <p *ngIf="server < 3; else offlineServer">Server {{ server }} is online</p>
+  <ng-template #offlineServer>Server {{ server }} is offline</ng-template>
+</div>
